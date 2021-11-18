@@ -4,8 +4,39 @@
   <!-- Etiqueta raiz para todo doc. HTML -->
   <head>
     <title>My first web</title>
+    <style>
+      table, th, td, tr {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
+    <table style="width: 300px;">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td >Voleto Platzi</td>
+          <td>690.000 pesos</td>
+        </tr>
+        <tr>
+          <td>Amistad</td>
+          <td>Gratis</td>
+        </tr>
+        <tr>
+          <td>Eneas</td>
+          <td>0,1 pesos</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td>Total :</td>
+        <td>690.00,1 pesos</td>
+      </tfoot>
+    </table>
 <!-- ul es lista no ortenada -->
     <ul>
       <li>Elemento 1</li>
@@ -16,11 +47,18 @@
     </ul>
 <!-- ol es lista no ortenada -->
     <ol>
-      <li>Elemento 1</li>
+      <li value="50">Elemento 1</li>
       <li>Elemento 2</li>
       <li>Elemento 3</li>
       <li>Elemento 4</li>
       <li>Elemento 5</li>
+      <li>
+        <ol>
+          <li style="list-style-type: lower-alpha;">Sub elemento 1</li>
+          <li style="list-style-type: lower-alpha;">Sub elemento 2</li>
+          <li style="list-style-type: lower-roman;">Sub elemento 3</li>
+        </ol>
+      </li>
     </ol>
 
 
